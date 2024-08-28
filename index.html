@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-ONE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+          <!--<img src="IMG/Logo.png" alt="Imagen Logo de alura">
+          -->
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+        <h1 class="texto__principal">
+            Ingrese el texto aquí
+        </h1>
+        <textarea class="presentacion__texto" id="inputText" placeholder="Escribe tu texto aquí..." oninput="validateInput()"></textarea>
+        <div class="presentacion__buttons">
+            <button class="presentacion__buttons__es" id="encrypt-btn" onclick="encryptText()">Encriptar</button>
+            <button class="presentacion__buttons__es" id="decrypt-btn" onclick="decryptText()">Desencriptar</button>
+        </div>
+        </section>
+        <div class="mi__imagen-container">
+        <img  id="avatar-image" class="mi__imagen" src="imags/gatito1.jpg" alt="Imagen de fondo">
+        <textarea class="mi__imagen" id="outputText" placeholder="Texto encriptado o desencriptado aparecerá aquí..." readonly></textarea>
+        <button class="copy-btnn" id="copy-btn" onclick="copyText()">Copiar</button>
+    </div>
+    </main>
+    <footer class="footer">
+        <p>Laura Lucia Espindola 2024💜</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
